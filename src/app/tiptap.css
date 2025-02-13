@@ -1,0 +1,164 @@
+.tiptap {
+  padding: 1rem;
+  padding-bottom: 3rem;
+  min-height: 450px;
+  flex: 1;
+  max-height: 100%;
+  height: 100%;
+  overflow-y: auto;
+  /* background-color: var(--chakra-colors-brand-100); */
+}
+.chakra-ui-dark .tiptap {
+  background-color: var(--chakra-colors-gray-800);
+}
+@media (prefers-color-scheme: dark) {
+  .tiptap {
+    background-color: var(--chakra-colors-gray-800);
+  }
+}
+.tiptap:focus {
+  outline: none;
+}
+.tiptap > * + * {
+  margin-top: 0.5em;
+}
+.tiptap p.is-editor-empty:first-child::before {
+  color: #939aa0;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.penstack-post-editor ul,
+.penstack-post-editor ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  list-style-position: outside;
+}
+
+.penstack-post-editor ul {
+  list-style-type: disc;
+}
+
+.penstack-post-editor ol {
+  list-style-type: decimal;
+}
+
+.penstack-post-editor ul ul,
+.penstack-post-editor ul ol,
+.penstack-post-editor ol ul,
+.penstack-post-editor ol ol {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  list-style-type: circle;
+}
+
+.penstack-post-editor ul ul ul,
+.penstack-post-editor ul ul ol,
+.penstack-post-editor ul ol ul,
+.penstack-post-editor ul ol ol,
+.penstack-post-editor ol ul ul,
+.penstack-post-editor ol ul ol,
+.penstack-post-editor ol ol ul,
+.penstack-post-editor ol ol ol {
+  list-style-type: square;
+}
+
+.penstack-post-editor ul li,
+.penstack-post-editor ol li {
+  margin-bottom: 0.5rem;
+}
+
+.penstack-post-editor ul li::marker,
+.penstack-post-editor ol li::marker {
+  color: var(--chakra-colors-gray-600);
+  font-size: 1em;
+}
+
+.tiptap h1,
+.tiptap h2,
+.tiptap h3,
+.tiptap h4,
+.tiptap h5,
+.tiptap h6 {
+  line-height: 1.1;
+}
+
+.tiptap h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tiptap h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tiptap h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tiptap h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tiptap h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tiptap h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tiptap mark {
+  background-color: yellow;
+}
+
+.tiptap img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tiptap blockquote {
+  padding-left: 1rem;
+  border-left: 2px solid var(--chakra-colors-gray-500);
+}
+
+.tiptap hr {
+  border: none;
+  border-top: 2px solid var(--chakra-colors-gray-500);
+  margin: 2rem 0;
+}
+
+.tiptap a {
+  color: var(--link-color);
+  /* text-decoration: underline; */
+}
+
+@media (prefers-color-scheme: dark) {
+  .tiptap mark {
+    /* background-color: var(--chakra-colors-yellow-700); */
+  }
+
+  .tiptap a {
+    color: var(--chakra-colors-brand-300);
+  }
+}

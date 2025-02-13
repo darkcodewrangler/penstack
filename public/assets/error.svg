@@ -1,0 +1,31 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .dark-accent { fill: #2D3748; }
+    .light-accent { fill: #4A5568; }
+    .primary { fill: #3182CE; }
+    .secondary { fill: #63B3ED; }
+  </style>
+  
+  <!-- Background Elements -->
+  <circle cx="400" cy="300" r="250" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="8 8"/>
+  
+  <!-- Main Error Symbol -->
+  <g transform="translate(300,200)">
+    <circle cx="100" cy="100" r="80" class="primary" opacity="0.1"/>
+    <path d="M60 60 L140 140 M140 60 L60 140" stroke="#3182CE" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g opacity="0.6">
+    <circle cx="150" cy="150" r="20" class="secondary"/>
+    <circle cx="650" cy="450" r="15" class="primary"/>
+    <circle cx="200" cy="500" r="25" class="secondary"/>
+    <circle cx="600" cy="100" r="18" class="primary"/>
+  </g>
+  
+  <!-- Abstract Lines -->
+  <g stroke="#E2E8F0" stroke-width="2">
+    <path d="M50 250 Q 200 150 350 250" fill="none"/>
+    <path d="M450 350 Q 600 450 750 350" fill="none"/>
+  </g>
+</svg>

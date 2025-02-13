@@ -1,0 +1,31 @@
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pen Icon -->
+  <g transform="translate(10,5)">
+    <rect x="0" y="0" width="40" height="40" rx="8" class="primary" fill="#3182CE"/>
+    <!-- Pen Nib -->
+    <path d="M20 8 L28 16 L16 28 L12 32 L8 24 L20 8" fill="white"/>
+    <!-- Ink Dot -->
+    <circle cx="12" cy="32" r="2" fill="#3182CE"/>
+  </g>
+  
+  <!-- Text "PENSTACK" -->
+  <g transform="translate(60,8)">
+    <text 
+      x="0" 
+      y="30" 
+      font-family="system-ui, -apple-system" 
+      font-weight="700" 
+      font-size="28"
+      fill="#2D3748"
+    >
+      PENSTACK
+    </text>
+  </g>
+  
+  <!-- Decorative Stack Lines -->
+  <g transform="translate(170,15)" stroke="#3182CE" stroke-width="2">
+    <line x1="0" y1="0" x2="20" y2="0"/>
+    <line x1="0" y1="8" x2="20" y2="8"/>
+    <line x1="0" y1="16" x2="20" y2="16"/>
+  </g>
+</svg>

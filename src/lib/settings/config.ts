@@ -1,0 +1,26 @@
+import { SiteSettings } from "@/src/types";
+
+export const DEFAULT_SETTINGS: SiteSettings = {
+  siteName: { value: "Penstack", enabled: true },
+  siteDescription: { value: "", enabled: true },
+  siteOpengraph: { value: "", enabled: true },
+  siteLogo: { value: "", enabled: true },
+  siteFavicon: { value: "", enabled: true },
+  maintenanceMode: { value: "false", enabled: false },
+  gaId: { value: "", enabled: false },
+  gtmId: { value: "", enabled: false },
+  posthogKey: { value: "", enabled: false },
+  posthogHost: { value: "https://app.posthog.com", enabled: false },
+  sentryDsn: { value: "", enabled: false },
+  sentryEnvironment: { value: "production", enabled: false },
+  errorTracking: { value: "false", enabled: false },
+  performanceMonitoring: { value: "false", enabled: false },
+  cloudinaryName: { value: "", enabled: false },
+  maxUploadSize: { value: "10", enabled: true },
+  defaultMediaFolder: { value: "uploads", enabled: true },
+  apiRateLimit: { value: "100", enabled: true },
+  cacheDuration: { value: "30", enabled: true },
+  emailFrom: { value: "", enabled: true },
+  newsletterEmailFrom: { value: "", enabled: false },
+  emailFromName: { value: "", enabled: true },
+};

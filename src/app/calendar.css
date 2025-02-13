@@ -1,0 +1,211 @@
+.calendar {
+  width: 300px;
+  border: 1px solid var(--chakra-colors-gray-200);
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: var(--chakra-colors-white);
+  box-shadow: var(--card-raised-soft);
+  padding: 10px;
+  font-size: 14px;
+}
+
+.chakra-ui-dark .calendar {
+  background-color: var(--chakra-colors-gray-800);
+  border-color: var(--chakra-colors-gray-700);
+  color: var(--chakra-colors-white);
+}
+
+.calendar .next-month,
+.calendar .prev-month {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--chakra-colors-white);
+  flex-shrink: 0;
+  color: var(--chakra-colors-gray-500);
+  box-shadow: var(--card-raised-soft);
+}
+
+.chakra-ui-dark .calendar .next-month,
+.chakra-ui-dark .calendar .prev-month {
+  background-color: var(--chakra-colors-gray-700);
+  color: var(--chakra-colors-gray-400);
+  box-shadow: var(--card-raised);
+}
+
+.calendar-header .next-month:not(:disabled):hover,
+.calendar-header .prev-month:not(:disabled):hover {
+  background-color: var(--chakra-colors-brand-100);
+  color: var(--chakra-colors-black);
+}
+
+.chakra-ui-dark .calendar-header .next-month:not(:disabled):hover,
+.chakra-ui-dark .calendar-header .prev-month:not(:disabled):hover {
+  background-color: var(--chakra-colors-gray-600);
+  color: var(--chakra-colors-white);
+}
+
+.calendar-header button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  border-radius: none;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-bottom-color: var(--chakra-colors-gray-300);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: medium;
+}
+
+.chakra-ui-dark .calendar-header {
+  border-bottom-color: var(--chakra-colors-gray-600);
+}
+
+.week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.week-day {
+  text-align: center;
+  font-weight: normal;
+  color: var(--chakra-colors-gray-500);
+}
+
+.chakra-ui-dark .week-day {
+  color: var(--chakra-colors-gray-400);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.day:hover {
+  background-color: var(--chakra-colors-brand-100);
+}
+
+.chakra-ui-dark .day:hover {
+  background-color: var(--chakra-colors-gray-600);
+}
+
+.day.selected {
+  background-color: var(--chakra-colors-brand-500);
+  color: var(--chakra-colors-white);
+}
+
+.chakra-ui-dark .day.selected {
+  background-color: var(--chakra-colors-brand-500);
+}
+
+.day.empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+.calendar-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.done-button {
+  display: inline-block;
+  background-color: var(--chakra-colors-brand-500);
+  color: var(--chakra-colors-white);
+  border: none;
+  padding: 3px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+  border-radius: 16px;
+}
+
+.chakra-ui-dark .done-button {
+  background-color: var(--chakra-colors-brand-500);
+}
+
+.done-button:hover {
+  background-color: var(--chakra-colors-brand-600);
+}
+
+.chakra-ui-dark .done-button:hover {
+  background-color: var(--chakra-colors-brand-600);
+}
+
+.cancel-button {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--chakra-colors-gray-600);
+  border: 1px solid var(--chakra-colors-gray-600);
+  padding: 3px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+  border-radius: 16px;
+}
+
+.chakra-ui-dark .cancel-button {
+  color: var(--chakra-colors-gray-400);
+  border-color: var(--chakra-colors-gray-600);
+}
+
+.cancel-button:hover {
+  background-color: var(--chakra-colors-gray-100);
+}
+
+.chakra-ui-dark .cancel-button:hover {
+  background-color: var(--chakra-colors-gray-700);
+}
+
+.day.today {
+  background-color: var(--chakra-colors-brand-100);
+  font-weight: bold;
+  color: var(--chakra-colors-brand-500);
+}
+
+.chakra-ui-dark .day.today {
+  background-color: var(--chakra-colors-gray-700);
+  color: var(--chakra-colors-brand-500);
+}
+
+.day.today.selected {
+  background-color: var(--chakra-colors-brand-500);
+  color: var(--chakra-colors-white);
+}
+
+.chakra-ui-dark .day.today.selected {
+  background-color: var(--chakra-colors-brand-500);
+  color: var(--chakra-colors-white);
+}
